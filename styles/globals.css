@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.active {
+  border-color: blue;
+  /* Add any other styling you desire for the active tab */
+}
