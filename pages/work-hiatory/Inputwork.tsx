@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import Navbar from '../Navbar/Navbar';
-import { Link } from 'react-router-dom';
 import { useRouter } from 'next/router';
 import Preview_side from '../previewresume/Preview_side';
 import NewNavbar from '../Navbar/NewNavbar';
@@ -59,7 +57,7 @@ const Inputwork = ({user, setUserWork }) => {
                   <div className='inline-flex space-x-8 w-full' id='input-row-1'>
                         <div className='w-1/2' id='f-mame'>
                             <label htmlFor='fname' className='font-semibold'>Job title</label >
-                            <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUserwork.title || (user && user.title) || ''}
                             onChange={handleInputChange}
                             name="title" id="title" />
@@ -67,7 +65,7 @@ const Inputwork = ({user, setUserWork }) => {
     
                           <div className='w-1/2' id='f-name'>
                             <label htmlFor='lname' className='font-semibold'>Employer</label >
-                            <input className='border-2 rounded-lg w-full h-[85%] ' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2 ' type="text" 
                             value={localUserwork.Employer || (user && user.Employer) || ''}
                             onChange={handleInputChange}
                             name="Employer" id="Employer" />
@@ -78,7 +76,7 @@ const Inputwork = ({user, setUserWork }) => {
                     <div className='inline-flex space-x-8 w-full' id='input-row-3'>
                           <div className='w-1/2' id='City'>
                             <label htmlFor='City' className='font-semibold'>City</label>
-                            <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUserwork.City || (user && user.City) || '' }
                             onChange={handleInputChange}
                             name="City" id="City" />
@@ -86,7 +84,7 @@ const Inputwork = ({user, setUserWork }) => {
     
                           <div className='w-1/2' id='statee'>
                             <label htmlFor='statee' className='font-semibold'>State / Province</label>
-                            <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUserwork.statee || (user && user.statee) || ''} 
                             onChange={handleInputChange}
                             name="statee" id="statee" />
@@ -97,7 +95,7 @@ const Inputwork = ({user, setUserWork }) => {
                     <div className='inline-flex space-x-8 w-full' id='input-row-1'>
                         <div className='w-1/2' id='sdate'>
                             <label htmlFor='sdate' className='font-semibold'>Start date</label>
-                            <input className='border-2 rounded-lg w-full h-[85%]' type="date" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="date" 
                             value={localUserwork.sdate || (user && user.sdate) || ''}
                             onChange={handleInputChange}
                             name="sdate" id="sdate" />
@@ -105,7 +103,7 @@ const Inputwork = ({user, setUserWork }) => {
     
                           <div className='w-1/2' id='edate'>
                             <label htmlFor='edate' className='font-semibold'>End date</label>
-                            <input className='border-2 rounded-lg w-full h-[85%]'  
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2'  
                              type="date"
                              value={localUserwork.edate || (user && user.edate) || ''}
                              onChange={handleInputChange}

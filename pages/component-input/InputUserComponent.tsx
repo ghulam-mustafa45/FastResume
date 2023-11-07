@@ -56,7 +56,7 @@ const InputUserComponent = ({ user, setUserInfo }) => {
               <div className='inline-flex space-x-8 w-full' id='input-row-1'>
                     <div className='w-1/2' id='f-mame'>
                         <label htmlFor='fname' className='font-semibold'>First Name</label >
-                        <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                         value={localUserInfo.fname || (user && user.fname) || ''}             
                         onChange={handleInputChange}
                         name="fname" id="fname" />
@@ -64,7 +64,7 @@ const InputUserComponent = ({ user, setUserInfo }) => {
 
                       <div className='w-1/2' id='f-mame'>
                         <label htmlFor='lname' className='font-semibold'>Last Name</label >
-                        <input className='border-2 rounded-lg w-full h-[85%] ' type="text" 
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2 ' type="text" 
                         value={localUserInfo.lname || (user && user.lname) || ''} 
                         onChange={handleInputChange}
                         name="lname" id="lname" />
@@ -72,7 +72,7 @@ const InputUserComponent = ({ user, setUserInfo }) => {
               </div>
                 <div id='profession-row-2 ' className='w-full'>
                 <label htmlFor='profession' className='font-semibold'>Profession</label>
-                  <input className='border-2 rounded-lg w-full  h-[45px]' type="text" 
+                  <input className='border-2 rounded-lg w-full  h-[45px] px-2' type="text" 
                   value={localUserInfo.profession || (user && user.profession) || ''}  
                   onChange={handleInputChange}
                   name="profession" id="profession" />
@@ -82,7 +82,7 @@ const InputUserComponent = ({ user, setUserInfo }) => {
                 <div className='inline-flex space-x-8 w-full' id='input-row-3'>
                       <div className='w-1/3' id='city'>
                         <label htmlFor='city' className='font-semibold'>City</label>
-                        <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                         value={localUserInfo.city || (user && user.city) || ''}
                         onChange={handleInputChange}
                         name="city" id="city" />
@@ -90,14 +90,14 @@ const InputUserComponent = ({ user, setUserInfo }) => {
 
                       <div className='w-1/3' id='statee'>
                         <label htmlFor='statee' className='font-semibold'>State / Province</label>
-                        <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                         value={ localUserInfo.statee || (user && user.statee) || ''}
                         onChange={handleInputChange}
                         name="statee" id="statee" />
                       </div>
                       <div className='w-1/3' id='zip-code'>
                         <label htmlFor='Zip' className='font-semibold'>Zip code / Postal code</label>
-                        <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                         value={localUserInfo.Zip || (user && user.Zip) || ''}
                         onChange={handleInputChange}
                         name="Zip" id="Zip" />
@@ -107,7 +107,7 @@ const InputUserComponent = ({ user, setUserInfo }) => {
                 <div className='inline-flex space-x-8 w-full' id='input-row-1'>
                     <div className='w-1/2' id='Phone'>
                         <label htmlFor='phone' className='font-semibold'>Phone</label>
-                        <input className='border-2 rounded-lg w-full h-[85%]' type="text" 
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                         value={localUserInfo.phone || (user && user.phone) || ''} 
                         onChange={handleInputChange}
                         name="phone" id="phone" />
@@ -115,7 +115,7 @@ const InputUserComponent = ({ user, setUserInfo }) => {
            
                       <div className='w-1/2' id='Email'>
                         <label htmlFor='email' className='font-semibold'>Email address</label>
-                        <input className='border-2 rounded-lg w-full h-[85%]'  
+                        <input className='border-2 rounded-lg w-full h-[85%] px-2'  
                          type="email"
                          value={localUserInfo.email || (user && user.email) || ''} 
                          onChange={handleInputChange}

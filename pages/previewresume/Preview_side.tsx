@@ -41,7 +41,7 @@ const Preview_side = (props) => {
 
                     <div className='bg-[#efefef] space-y-1 p-3 py-1' id='contactus-div'>
                         <h1 className='text-[13px] font-medium '>CONTACT</h1>
-                        <div className='inline-flex space-x-2 text-center justify-center ' style={{ alignItems: 'center' }}>  <BsFillTelephoneFill className='text-xs' /><p className='text-sm text-gray-600'>
+                        <div className='inline-flex space-x-2 text-center justify-center ' style={{ alignItems: 'center' }}>  <BsFillTelephoneFill className='text-xs' /><p className='text-xs text-gray-600'>
                         tel: <span className='text-[10px] text-gray-600'>{userInfo?.phone || props.user.data.phone}</span></p></div>
                         <div className='inline-flex space-x-2' style={{ alignItems: 'center' }}><IoIosMail className='text-sm'/><p> <span className='text-[10px] text-gray-600'>{userInfo?.email || props.user.data.email}</span></p></div>
                        <div className='inline-flex space-x-2'style={{ alignItems: 'center' }}> <ImLocation className='text-[9px]'/><p><span className='text-[10px] text-gray-600'>{ userInfo?.Zip || props.user.data.Zip} { userInfo?.statee || props.user.data.statee}, {userInfo?.city || props.user.data.city}</span></p></div>
@@ -51,7 +51,7 @@ const Preview_side = (props) => {
                     <div className=' ' id='skills'>
                     <h1 className='text-[13px] font-medium  bg-[#efefef] p-3 py-4 '>SKILLS</h1>
                     <div className='text-[10px]'>
-                    <ul className='space-y-1 pt-2'>
+                    <ul className='space-y-1 pt-2 p-2'>
           {user.skills.map((skillSet, setIndex) => (
             <ul className='space-y-2' key={setIndex}>
             {skillSet.selectedOptions.map((option, optionIndex) => (
@@ -67,9 +67,9 @@ const Preview_side = (props) => {
 
                     <div className='space-y-1' id='education'>
                     <h1 className='text-[13px] font-medium  bg-[#efefef] p-3 py-3'>EDUCATION</h1>
-                    <p className='font-bold mt-3 text-xs pt-1 '>{education?.degree || props.user.Education.degree} / {education?.field || props.user.Education.field} </p>
-                    <p className='text-[10px] text-gray-600'>{education?.name ||  props.user.Education.name}</p>
-                    <p className='text-[10px] text-gray-600'>{edustartYear} - {eduendYear}</p>
+                    <p className='font-bold mt-3 text-xs pt-1 px-2'>{education?.degree || props.user.Education.degree} / {education?.field || props.user.Education.field} </p>
+                    <p className='text-[10px] text-gray-600 px-2' >{education?.name ||  props.user.Education.name}</p>
+                    <p className='text-[10px] text-gray-600 px-2'>{edustartYear} - {eduendYear}</p>
                     </div>     {/*education-div */}
 
             </div>         {/*left-contact-main*/} 
@@ -78,13 +78,13 @@ const Preview_side = (props) => {
                 
                       <div id='profile'>
                             <h1 className='text-[13px] font-medium  bg-[#efefef] p-3 py-3'>PROFILE</h1>
-                            <p  className='text-[10px] pt-3 text-gray-600'>Marketing management is the organizational discipline which focuses on the practical application of marketing orientation, techniques and methods inside enterprises and organizations and on the management of a firm's marketing resources and activities.</p>
+                            <p  className='text-[10px] pt-3 text-gray-600 px-2'>Marketing management is the organizational discipline which focuses on the practical application of marketing orientation, techniques and methods inside enterprises and organizations and on the management of a firm's marketing resources and activities.</p>
                       </div>     {/*profile-div */}
 
                       <div id='experience'>
                             <h1 className='text-[13px] font-medium  bg-[#efefef] p-3 py-3'>EXPERIENCE</h1>
-                            <p className='font-bold mt-3 text-xs text-gray-600'>{userwork?.title || props.user.work.title}</p>
-                            <div className='inline-flex space-x-2 mt-1' id='profile-separation'>
+                            <p className='font-bold mt-3 text-xs text-gray-600 px-2'>{userwork?.title || props.user.work.title}</p>
+                            <div className='inline-flex space-x-2 mt-1 px-2' id='profile-separation'>
   <div className='flex items-center space-x-2'>
     <p className='text-[10px] text-gray-600'>{ userwork?.Employer || props.user.work.Employer}</p>
     <div className=' h-3 border-[0.1px] rounded-full border-gray-400'></div>

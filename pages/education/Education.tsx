@@ -63,7 +63,7 @@ const Education = ({user, setEducation }) => {
                   <div className='inline-flex space-x-8 w-full' id='input-row-1'>
                         <div className='w-1/2 space-y-2' id='f-mame'>
                             <label htmlFor='name' className='font-semibold'>School Name</label >
-                            <input className='border-2 rounded-lg w-full h-[85%] px-3 ' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUsereducation.name || (user && user.name) || ''}
                             onChange={handleInputChange}
                             name="name" id="name" />
@@ -71,7 +71,7 @@ const Education = ({user, setEducation }) => {
     
                           <div className='w-1/2 space-y-2' id='f-mame'>
                             <label htmlFor='location' className='font-semibold'>School Location</label >
-                            <input className='border-2 rounded-lg w-full h-[85%] px-3' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUsereducation.location || (user && user.location) || ''}
                             onChange={handleInputChange}
                             name="location" id="location" />
@@ -82,7 +82,7 @@ const Education = ({user, setEducation }) => {
                     <div className='inline-flex space-x-8 w-full' id='input-row-3'>
                           <div className='w-1/2 space-y-2' id='City'>
                             <label htmlFor='degree' className='font-semibold'>Degree</label>
-                            <input className='border-2 rounded-lg w-full h-[85%] px-3' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUsereducation.degree || (user && user.degree) || ''}
                             onChange={handleInputChange}
                             name="degree" id="degree" />
@@ -90,7 +90,7 @@ const Education = ({user, setEducation }) => {
     
                           <div className='w-1/2 space-y-2' id='statee'>
                             <label htmlFor='field' className='font-semibold'>Field of Study</label>
-                            <input className='border-2 rounded-lg w-full h-[85%] px-3' type="text" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="text" 
                             value={localUsereducation.field || (user && user.field) || ''}
                             onChange={handleInputChange}
                             name="field" id="field" />
@@ -101,7 +101,7 @@ const Education = ({user, setEducation }) => {
                     <div className='inline-flex space-x-8 w-full' id='input-row-1'>
                         <div className='w-1/2 space-y-2' id='sdate'>
                             <label htmlFor='sdate' className='font-semibold'>Graduation Start Date</label>
-                            <input className='border-2 rounded-lg w-full h-[85%] px-3' type="date" 
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2' type="date" 
                             value={localUsereducation.sdate || (user && user.sdate) || ''}
                             onChange={handleInputChange}
                             name="sdate" id="sdate" />
@@ -109,7 +109,7 @@ const Education = ({user, setEducation }) => {
     
                           <div className='w-1/2 space-y-2' id='edate'>
                             <label htmlFor='edate' className='font-semibold'>Graduation End Date</label>
-                            <input className='border-2 rounded-lg w-full h-[85%] px-3'  
+                            <input className='border-2 rounded-lg w-full h-[85%] px-2'  
                              type="date"
                              value={localUsereducation.edate || (user && user.edate) || ''}
                              onChange={handleInputChange}

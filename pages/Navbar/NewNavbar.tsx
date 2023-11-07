@@ -39,7 +39,7 @@ const NewNavbar = () => {
 
     <div className='space-x-6 inline-flex text-[rgb(213,218,225)] '>
     <div className='inline-flex space-x-2 cursor-pointer'  style={{ alignItems: 'center' }}>
-             <div className={`inline-flex space-x-2 cursor-pointer ${activeTab === 1 ? 'ring ring-blue-500' : ''}`} onClick={() => handleTabClick(1)} style={{ alignItems: 'center' }}>
+             <div className={`inline-flex space-x-2 cursor-pointer ${activeTab === 1 ? ' ring-blue-500' : ''}`} onClick={() => handleTabClick(1)} style={{ alignItems: 'center' }}>
              <div className={`border-2 rounded-full w-[2rem] h-[2rem] border-gray-400 text-center ${activeTab === 1 ? 'active' : ''}`}> 
                         <p>1</p>
                     </div>

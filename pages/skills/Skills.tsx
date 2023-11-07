@@ -1,11 +1,9 @@
 import React, { useState, useReducer } from 'react';
 import { BsPlusCircleFill } from 'react-icons/bs';
 import { BsCheck2 } from 'react-icons/bs';
-import { FaTrash } from 'react-icons/fa'; // Import the delete icon
-import Navbar from '../Navbar/Navbar';
+import { FaTrash } from 'react-icons/fa'; 
 import { useRouter } from 'next/router';
 import { connect } from 'react-redux';
-import RetrieveSkills from '../component-fetch/RetrieveSkills';
 import NewNavbar from '../Navbar/NewNavbar';
 
 
@@ -91,7 +89,7 @@ const Skills = ({ setuserskills }) => {
               <h2 className="font-bold mb-3">Highlighted skills</h2>
               <ul className=' space-y-3'>
                 {selectedOptions.map((option, index) => (
-                  <li className={`p-4 bg-[#e9ecef] rounded-lg space-x-2 border-[1px] border-gray-300  ${option === '' ? 'mt-2' : ''}`} key={index}>
+                  <li className={`p-4 bg-gray-50 rounded-lg space-x-2 border-[1px] border-gray-300  ${option === '' ? 'mt-2' : ''}`} key={index}>
                     {option === '' ?  (
                       // Empty option, no delete button
                       ' '
@@ -99,7 +97,7 @@ const Skills = ({ setuserskills }) => {
                       // Display the delete button for other options
                       <>
                         <span className="mr-2">{`#${index + 1} ${option}`}</span>
-                        <button onClick={() => handleDeleteOption(index)}>
+                        <button className='float-right mr-10' onClick={() => handleDeleteOption(index)}>
                           <FaTrash />
                         </button>
                       </>
