@@ -35,7 +35,7 @@ const Preview_side = (props) => {
                      <div className='w-full border-[0.1px] rounded-full mt-8 border-gray-600'></div>
             </div>  {/*main-cv-heading */}
 
-<div className='mt-5 pb-3' id='info-main-box'>
+<div className='mt-5 pb-3 ' id='info-main-box'>
     <div className='flex space-x-4' id='main-right-left-flex'>
             <div className='w-[42%] space-y-8' id='left-contact-main'>
 

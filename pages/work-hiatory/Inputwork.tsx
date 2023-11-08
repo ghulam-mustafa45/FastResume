@@ -31,7 +31,7 @@ const Inputwork = ({user, setUserWork }) => {
       console.log('Dispatching action to set user info:', userWork);
       const updatedwork = { ...user, ...localUserwork };
       setUserWork(updatedwork);
-      router.push('/education/Mainoptions');
+      router.push('/work-hiatory/Addnewposition');
      
     };
     const back = () => {      

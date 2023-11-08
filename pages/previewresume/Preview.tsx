@@ -62,17 +62,18 @@ const endYear = endDate.getFullYear();
                     <h1 className='text-[20px] font-medium  bg-[#efefef] p-3 py-4 '>SKILLS</h1>
                     <div >
                     <ul className='space-y-1 pt-2'>
-          {user.skills.map((skillSet, setIndex) => (
-            <ul className='space-y-2' key={setIndex}>
-            {skillSet.selectedOptions.map((option, optionIndex) => (
-              <li key={optionIndex}>{option}</li>
-            ))}
-          </ul>
-          ))}
+                    {user.skills.map((skillSet, setIndex) => (
+                      <ul className='space-y-2' key={setIndex}>
+                      {skillSet.selectedOptions.map((option, optionIndex) => (
+                        <li key={optionIndex}>{option}</li>
+                      ))}
+                    </ul>
+                    ))}
           
-        </ul>
+                   </ul>
                     </div>
-                    <p>{props.user.option}</p>
+                   
+                    
                     </div>     {/*skills-div */}
 
                     <div className='space-y-1' id='education'>

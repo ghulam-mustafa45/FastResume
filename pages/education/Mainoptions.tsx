@@ -11,23 +11,27 @@ const Mainoptions = () => {
         router.push('/education/Education') 
       };
 
-  const Highschool=()=>{
+    const Highschool=()=>{
         router.push('/education/Education')   };
 
     const Associates=()=>{
         router.push('/education/Education')  };
 
-     const Bachelor=()=>{
+    const Bachelor=()=>{
         router.push('/education/Education')};
             
-        const Masters=()=>{
+    const Masters=()=>{
             router.push('/education/Education')  };
 
-        const College=()=>{
+    const College=()=>{
             router.push('/education/Education') };
         
-            const Vocational=()=>{
-                router.push('/education/Education')};
+    const Vocational=()=>{
+             router.push('/education/Education')};
+
+    const noanswer=()=>{
+              router.push('/skills/Skills')};
+                
             
   return (
     <>
@@ -83,7 +87,7 @@ const Mainoptions = () => {
                             </div>
                         </div>
                         <div className='pt-20 pb-20'>
-                    <button className='float-left rounded-md px-12 py-4 text-base font-semibold text-[#0066cf] hover:bg-blue-50' >Prefer not to answer</button>
+                    <button className='float-left rounded-md px-12 py-4 text-base font-semibold text-[#0066cf] hover:bg-blue-50' onClick={noanswer}>Prefer not to answer</button>
                         <div className='text-xs w-[50%] float-right'>           
                           <button className='bg-[#0066cf] float-right rounded-md px-14 py-5 text-base font-semibold text-white  transition-transform duration-500 ease-in-out transform hover:bg-slate-600' onClick={handleSavecontinue}>Continue</button>
                       </div>
